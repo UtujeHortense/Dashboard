@@ -1,0 +1,61 @@
+{
+    "client": {
+        "host": "localhost:8080"
+    },
+    "server": {
+        "current_time": 1638697392,
+        "services": [{
+            "name": "weather",
+            "widget": [{
+                "name": "weather_informations",
+                "description": "Display information about the weather for the city asked",
+                "params": [{
+                    "city": "city",
+                    "type": "string"
+                }]
+            }]
+        }, {
+            "name": "timer",
+            "widget": [{
+                "name": "timer_countdown",
+                "description": "Countdown timer until the desire date",
+                "params": [{
+                    "year": "year",
+                    "type": "int"
+                }, {
+                    "month": "month",
+                    "type": "int"
+                }, {
+                    "day": "day",
+                    "type": "int"
+                }]
+            }]
+        }, {
+            "name": "Apod - A Picture Of a Day",
+            "widget": [{
+                "name": "Apod_display",
+                "descritpion": "Display the picture of the day, or of the day given",
+                "params": [{
+                    "year": "year",
+                    "type": "int"
+                }, {
+                    "month": "month",
+                    "type": "int"
+                }, {
+                    "day": "day",
+                    "type": "int"
+                }]
+            }]
+        }, {
+            "name": "deezer",
+            "widget": [{
+                "name": "deezer artists stats",
+                "descritpion": "Listen music, shuffle albums liked, display information about an artist liked",
+                "params": [{
+                    "artist": "artist",
+                    "type": "drop_down"
+                }]
+            }]
+        }]
+    }
+}
